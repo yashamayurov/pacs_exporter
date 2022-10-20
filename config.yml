@@ -1,0 +1,11 @@
+---
+pacs_servers:
+  target_pacs:
+    IP: 10.0.0.20
+    AET: 51STORAGE
+    port: 11112
+  sender_pacs:
+    IP: 10.100.10.10
+    AET: ARCHIMED
+    port: 104
+listen_port: 9000
