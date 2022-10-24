@@ -50,7 +50,7 @@ docker run --expose 9000 -p 9000:9000 -v /etc/pacs_exporter:/config yashamayurov
       volumes:
         - /etc/pacs_exporter:/config
 ```
-## Приавила для Prometheus 
+## Правила для Prometheus 
 ```yaml
   - alert: "Study send failed"
     expr: "count_not_sended_study!=0"
