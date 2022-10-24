@@ -75,5 +75,6 @@ docker run --expose 9000 -p 9000:9000 -v /etc/pacs_exporter:/config yashamayurov
 1. Вывести список неотправленных исследований
 
 ## Источники
-[https://github.com/prometheus/client_python](https://github.com/prometheus/client_python)
-[https://www.gspann.com/resources/blogs/developing-custom-exporter-for-prometheus-using-python/](https://www.gspann.com/resources/blogs/developing-custom-exporter-for-prometheus-using-python/)
+* [https://github.com/prometheus/client_python](https://github.com/prometheus/client_python)
+
+* [https://www.gspann.com/resources/blogs/developing-custom-exporter-for-prometheus-using-python/](https://www.gspann.com/resources/blogs/developing-custom-exporter-for-prometheus-using-python/)
