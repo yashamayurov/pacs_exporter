@@ -1,11 +1,39 @@
 ## Описание
-Exporter для мониторинга состояния отправки исследований с одного PACS-сервера на другой(смотрим исследования за сегодняшний день на сервере-источнике и проверяет наличие исследований на целевом сервере) и для отслеживания доступности PACS-серверов.
+Prometheus Exporter для мониторинга состояния отправки исследований с одного PACS-сервера на другой(смотрим исследования за сегодняшний день на сервере-источнике и проверяет наличие исследований на целевом сервере) и для отслеживания доступности PACS-серверов.
 
 Возвращает следующие метрики:
 
 count_not_sended_study - количество исследований, которые имеются на сервере-источнике, но отсутвуют на сервере назначения
 
 pacs_server_up - состоние сервера 1 - доступен, - не доступен
+
+### Вывод метрик
+```
+# HELP count_not_sended_study Number of studies that are not on the target server
+# TYPE count_not_sended_study gauge
+count_not_sended_study 0.0
+# HELP pacs_server_up Server status
+# TYPE pacs_server_up gauge
+pacs_server_up{AET="51STORAGE",IP="10.0.0.20",port="11112"} 1.0
+# HELP pacs_server_up Server status
+# TYPE pacs_server_up gauge
+pacs_server_up{AET="ARCHIMED",IP="10.100.10.10",port="104"} 1.0
+# HELP pacs_server_up Server status
+# TYPE pacs_server_up gauge
+pacs_server_up{AET="ARCHIMED",IP="10.100.10.10",port="105"} 1.0
+# HELP pacs_server_up Server status
+# TYPE pacs_server_up gauge
+pacs_server_up{AET="ARCHIMED",IP="10.100.10.10",port="106"} 1.0
+# HELP pacs_server_up Server status
+# TYPE pacs_server_up gauge
+pacs_server_up{AET="ARCHIMED",IP="10.100.10.10",port="107"} 1.0
+# HELP pacs_server_up Server status
+# TYPE pacs_server_up gauge
+pacs_server_up{AET="ARCHIMED",IP="10.100.10.10",port="108"} 1.0
+# HELP pacs_server_up Server status
+# TYPE pacs_server_up gauge
+pacs_server_up{AET="ARCHIMED",IP="10.100.10.10",port="109"} 1.0
+```
 
 ## Требования
 Python 3.6.8 (на других версия необходимо тестирование) либо запуск в виде Docker-контейнера
@@ -69,6 +97,8 @@ docker run --expose 9000 -p 9000:9000 -v /etc/pacs_exporter:/config yashamayurov
       summary: "PACS server not available"
       description: "Не доустпен сервер PACS {{ $labels.IP }} {{ $labels.AET }} {{ $labels.port }}"
 ```
+![Prometheus](./img/prom.png)
+
 ## Планы на будущее
 1. Дописать комментарии к коду
 1. Добавить обработку ошибок (в настоящий момент вылетает при недоступности пакса-источника или пакса-назаняения)
