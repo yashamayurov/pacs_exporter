@@ -1,14 +1,14 @@
 ---
 pacs_servers:
-  target_pacs:
+  target_pacs:        # PACS - назначение
     IP: 10.0.0.20
     AET: 51STORAGE
     port: 11112
-  sender_pacs:
+  sender_pacs:        # PACS - источник
     IP: 10.100.10.10
     AET: ARCHIMED
     port: 104
-  archimed_105:
+  archimed_105:         # Далее - PACS севреры для проверки доступности
     IP: 10.100.10.10
     AET: ARCHIMED
     port: 105
@@ -28,5 +28,5 @@ pacs_servers:
     IP: 10.100.10.10
     AET: ARCHIMED
     port: 109
-listen_port: 9000
-local_AET: PYNETDICOM
+listen_port: 9000       # Прослушиваемый порт
+local_AET: PYNETDICOM   # AET экспортера
