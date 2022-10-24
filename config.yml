@@ -8,4 +8,25 @@ pacs_servers:
     IP: 10.100.10.10
     AET: ARCHIMED
     port: 104
+  archimed_105:
+    IP: 10.100.10.10
+    AET: ARCHIMED
+    port: 105
+  archimed_106:
+    IP: 10.100.10.10
+    AET: ARCHIMED
+    port: 106
+  archimed_107:
+    IP: 10.100.10.10
+    AET: ARCHIMED
+    port: 107
+  archimed_108:
+    IP: 10.100.10.10
+    AET: ARCHIMED
+    port: 108
+  archimed_109:
+    IP: 10.100.10.10
+    AET: ARCHIMED
+    port: 109
 listen_port: 9000
+local_AET: PYNETDICOM

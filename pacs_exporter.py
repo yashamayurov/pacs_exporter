@@ -1,6 +1,6 @@
 from pydicom.dataset import Dataset
 from datetime import datetime
-from pynetdicom import AE
+from pynetdicom import AE, VerificationPresentationContexts
 from pynetdicom.sop_class import PatientRootQueryRetrieveInformationModelFind
 import yaml
 import time
@@ -8,18 +8,21 @@ import argparse
 
 from prometheus_client.core import GaugeMetricFamily, REGISTRY, CounterMetricFamily
 from prometheus_client import start_http_server
+import prometheus_client
 
 class DicomCollector(object):
     config = object()
     studyDate = ''
-    def __init__(self, sdate, config):
-        self.config = config
-        self.studyDate = sdate
+    local_AET = ''
+    def __init__(self, config):
+        self.config = config    
+        self.local_AET = config['local_AET'] 
         pass
-    
+
     def collect(self):
         sender_pacs = self.config['pacs_servers']['sender_pacs']
         target_pacs = self.config['pacs_servers']['target_pacs']
+        self.studyDate = datetime.now().date().strftime("%Y%m%d")
         study_list = self.GetStudyList(StudyDate=self.studyDate,AET=sender_pacs['AET'],IP=sender_pacs['IP'],port=sender_pacs['port'])
         print(self.studyDate)
         print(sender_pacs)
@@ -28,7 +31,6 @@ class DicomCollector(object):
         for study in study_list:
             ds = Dataset
             ds = study[1]
-    #mokb_study_list = GetStudyList('20221017','51STORAGE','10.0.0.20',11112,StudyID=ds.StudyID,patientName=ds.PatientName)
             is_error = self.CheckErrorSend(StudyDate=self.studyDate,AET=target_pacs['AET'],IP=target_pacs['IP'],port=target_pacs['port'],StudyID=ds.StudyID,patientName=ds.PatientName)
             count_error += is_error
         
@@ -41,14 +43,18 @@ class DicomCollector(object):
         gauge = GaugeMetricFamily("count_not_sended_study", "Number of studies that are not on the target server")
         gauge.add_metric(['count_not_sended_study'], count_error)
         yield gauge
-        # count = CounterMetricFamily("random_number_2", "A random number 2.0", labels=['randomNum'])
-        # global totalRandomNumber
-        # totalRandomNumber += random.randint(1,30)
-        # count.add_metric(['random_num'], totalRandomNumber)
-        # yield count
+
+        for server in self.config['pacs_servers'].items():
+            
+            r = self.Check_echo(AET=server[1]['AET'],IP=server[1]['IP'],port=server[1]['port'])
+            print(server[1]['AET'],server[1]['IP'],server[1]['port'])
+            gauge_server_status = GaugeMetricFamily("pacs_server_up","Server status", labels=['IP','AET','port'])
+            gauge_server_status.add_metric([server[1]['IP'], server[1]['AET'], str(server[1]['port'])],r)
+            yield gauge_server_status
+
 
     def GetStudyList(self, StudyDate, AET, IP, port, InstitutionName='',patientName='*',StudyID=''):
-        ae = AE()
+        ae = AE(self.local_AET)
         ae.add_requested_context(PatientRootQueryRetrieveInformationModelFind)
 
         # Create our Identifier (query) dataset
@@ -81,6 +87,24 @@ class DicomCollector(object):
         study_list = self.GetStudyList( StudyDate=StudyDate, AET=AET, IP=IP, port=port, patientName=patientName,StudyID=StudyID)
         r = len(study_list)==0
         return int(r)
+    
+    def Check_echo(self, AET, IP, port):
+        ae = AE(self.local_AET)
+        # Add a requested presentation context
+        ae.requested_contexts = VerificationPresentationContexts
+
+        # Associate with peer AE at IP 127.0.0.1 and port 11112
+        assoc = ae.associate(IP, port=port,ae_title=AET)
+        result = False
+        if assoc.is_established:
+            # Use the C-ECHO service to send the request
+            # returns the response status a pydicom Dataset
+            status = assoc.send_c_echo()
+            result = bool(status)
+            # Check the status of the verification request
+            assoc.release()
+        return int(result)
+
 
 ############
 if __name__ == "__main__":
@@ -96,35 +120,18 @@ if __name__ == "__main__":
 
     sender_pacs = read_data['pacs_servers']['sender_pacs']
     target_pacs = read_data['pacs_servers']['target_pacs']
-    
-    study_date = datetime.now().date().strftime("%Y%m%d")
+        
     listen_port = read_data['listen_port']
-
 
     start_http_server(listen_port)
     print(f'I listen port {listen_port}')
-    REGISTRY.register(DicomCollector(study_date,read_data))
+    
+    REGISTRY.unregister(prometheus_client.GC_COLLECTOR)
+    REGISTRY.unregister(prometheus_client.PLATFORM_COLLECTOR)
+    REGISTRY.unregister(prometheus_client.PROCESS_COLLECTOR)
+    
+    REGISTRY.register(DicomCollector(read_data))
     while True: 
         # period between collection
         time.sleep(3)
 
-#print(a['ip'])
-
-#study_list = GetStudyList('20221018','ARCHIMED','10.100.10.10',104)
-
-# study_list = GetStudyList(date,sender_pacs['AET'],sender_pacs['IP'],sender_pacs['port'])
-
-# count_error = 0
-# for study in study_list:
-#     ds = Dataset
-#     ds = study[1]
-    
-#     #mokb_study_list = GetStudyList('20221017','51STORAGE','10.0.0.20',11112,StudyID=ds.StudyID,patientName=ds.PatientName)
-#     is_error = CheckErrorSend(date,target_pacs['AET'],target_pacs['IP'],target_pacs['port'],StudyID=ds.StudyID,patientName=ds.PatientName)
-#     count_error += is_error
-#     if is_error != 0:
-#         print(is_error)
-#         print(ds.PatientName)
-#         print(ds.StudyID)
-
-# print(count_error)
