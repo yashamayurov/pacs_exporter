@@ -97,12 +97,13 @@ docker run --expose 9000 -p 9000:9000 -v /etc/pacs_exporter:/config yashamayurov
       summary: "PACS server not available"
       description: "Не доустпен сервер PACS {{ $labels.IP }} {{ $labels.AET }} {{ $labels.port }}"
 ```
-![Prometheus](./img/prom.png)
+![Prometheus](./img/prom.jpg)
 
 ## Планы на будущее
 1. Дописать комментарии к коду
 1. Добавить обработку ошибок (в настоящий момент вылетает при недоступности пакса-источника или пакса-назаняения)
 1. Вывести список неотправленных исследований
+1. Испрвить орфорграфические ошибки
 
 ## Источники
 * [https://github.com/prometheus/client_python](https://github.com/prometheus/client_python)
