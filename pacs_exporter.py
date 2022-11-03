@@ -22,27 +22,32 @@ class DicomCollector(object):
     def collect(self):
         sender_pacs = self.config['pacs_servers']['sender_pacs']
         target_pacs = self.config['pacs_servers']['target_pacs']
-        self.studyDate = datetime.now().date().strftime("%Y%m%d")
-        study_list = self.GetStudyList(StudyDate=self.studyDate,AET=sender_pacs['AET'],IP=sender_pacs['IP'],port=sender_pacs['port'])
-        print(self.studyDate)
-        print(sender_pacs)
-        print(target_pacs)
-        count_error = 0
-        for study in study_list:
-            ds = Dataset
-            ds = study[1]
-            is_error = self.CheckErrorSend(StudyDate=self.studyDate,AET=target_pacs['AET'],IP=target_pacs['IP'],port=target_pacs['port'],StudyID=ds.StudyID,patientName=ds.PatientName)
-            count_error += is_error
         
-            if is_error != 0:
-                print(is_error)
-                print(ds.PatientName)
-                print(ds.StudyID)  
-            
+        sender_status = self.Check_echo(AET=sender_pacs['AET'],IP=sender_pacs['IP'],port=sender_pacs['port'])
+        target_status = self.Check_echo(AET=target_pacs['AET'],IP=target_pacs['IP'],port=target_pacs['port'])
 
-        gauge = GaugeMetricFamily("count_not_sended_study", "Number of studies that are not on the target server")
-        gauge.add_metric(['count_not_sended_study'], count_error)
-        yield gauge
+        if (sender_status + target_status == 2):
+            self.studyDate = datetime.now().date().strftime("%Y%m%d")
+            study_list = self.GetStudyList(StudyDate=self.studyDate,AET=sender_pacs['AET'],IP=sender_pacs['IP'],port=sender_pacs['port'])
+            print(self.studyDate)
+            print(sender_pacs)
+            print(target_pacs)
+            count_error = 0
+            for study in study_list:
+                ds = Dataset
+                ds = study[1]
+                is_error = self.CheckErrorSend(StudyDate=self.studyDate,AET=target_pacs['AET'],IP=target_pacs['IP'],port=target_pacs['port'],StudyID=ds.StudyID,patientName=ds.PatientName)
+                count_error += is_error
+            
+                if is_error != 0:
+                    print(is_error)
+                    print(ds.PatientName)
+                    print(ds.StudyID)  
+                
+
+            gauge = GaugeMetricFamily("count_not_sended_study", "Number of studies that are not on the target server")
+            gauge.add_metric(['count_not_sended_study'], count_error)
+            yield gauge
 
         for server in self.config['pacs_servers'].items():
             
