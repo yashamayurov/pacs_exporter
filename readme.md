@@ -3,12 +3,15 @@ Prometheus Exporter для мониторинга состояния отпра�
 
 Возвращает следующие метрики:
 
-count_not_sended_study - количество исследований, которые имеются на сервере-источнике, но отсутвуют на сервере назначения
+- count_not_sended_study - количество исследований, которые имеются на сервере-источнике, но отсутствуют на сервере назначения
+- pacs_server_up - состоние сервера 1 - доступен, - не доступен
+- stydy_send_error - выводит метрику gauge с пометками имя пациента (name_patient) и id исселедования (study_id), которое не отправлено. Использовать для этого Gauge возможно, не самая правильная идея, но это работает.
 
-pacs_server_up - состоние сервера 1 - доступен, - не доступен
 
 ### Вывод метрик
 ```
+# TYPE stydy_send_error gauge
+stydy_send_error{name_patient="MAIUROV^IAKOV^DMITRIEVICH",study_id="123337"} 1.0
 # HELP count_not_sended_study Number of studies that are not on the target server
 # TYPE count_not_sended_study gauge
 count_not_sended_study 0.0
@@ -47,6 +50,7 @@ python.exe f:/tVagrant/dicom/pacs_exporter/pacs_exporter.py --config=f:/tVagrant
 
 ### Docker
 [https://hub.docker.com/r/yashamayurov/pacs_exporter](https://hub.docker.com/r/yashamayurov/pacs_exporter)
+[DockerFile](./Dockerfile)
 
 ```bash
 docker run --expose 9000 -p 9000:9000 -v /etc/pacs_exporter:/config yashamayurov/pacs_exporter:v0.0.3
@@ -96,14 +100,24 @@ docker run --expose 9000 -p 9000:9000 -v /etc/pacs_exporter:/config yashamayurov
     annotations:
       summary: "PACS server not available"
       description: "Не доустпен сервер PACS {{ $labels.IP }} {{ $labels.AET }} {{ $labels.port }}"
+  - alert: "Patient Study send failed"
+    expr: "stydy_send_error!=0"
+    for: "4m"
+    labels:
+      severity: "high"
+    annotations:
+      summary: "Archimed send study failed"
+      description: "Неотправленные исследования с ПАКС Архимед в МОКБ: ФИО {{ $labels.name_patient }} StudyID: {{ $labels.study_id }}"
+  
 ```
 ![Prometheus](./img/prom.jpg)
 
 ## Планы на будущее
 1. Дописать комментарии к коду
 1. Добавить обработку ошибок (в настоящий момент вылетает при недоступности пакса-источника или пакса-назаняения)
-1. Вывести список неотправленных исследований
-1. Испрвить орфорграфические ошибки
+1. ~~Вывести список неотправленных исследований~~ Реализовано
+1. Исправить орфорграфические ошибки
+1. Создать маршрут и шаблон для Alertmanager
 
 ## Источники
 * [https://github.com/prometheus/client_python](https://github.com/prometheus/client_python)
