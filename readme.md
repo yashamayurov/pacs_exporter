@@ -46,7 +46,7 @@ python.exe f:/tVagrant/dicom/pacs_exporter/pacs_exporter.py --config=f:/tVagrant
 ```
 
 ### Docker
-[https://hub.docker.com/repository/docker/yashamayurov/pacs_exporter](https://hub.docker.com/repository/docker/yashamayurov/pacs_exporter)
+[https://hub.docker.com/repository/docker/yashamayurov/pacs_exporter](https://hub.docker.com/r/yashamayurov/pacs_exporter)
 
 ```bash
 docker run --expose 9000 -p 9000:9000 -v /etc/pacs_exporter:/config yashamayurov/pacs_exporter:v0.0.3
