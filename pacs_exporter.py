@@ -43,7 +43,9 @@ class DicomCollector(object):
                     print(is_error)
                     print(ds.PatientName)
                     print(ds.StudyID)  
-                
+                    gauge_send_study_error = GaugeMetricFamily("stydy_send_error","Name patient and Study ID", labels=['name_patient','study_id'])
+                    gauge_send_study_error.add_metric([str(ds.PatientName),str(ds.StudyID)],1)
+                    yield gauge_send_study_error
 
             gauge = GaugeMetricFamily("count_not_sended_study", "Number of studies that are not on the target server")
             gauge.add_metric(['count_not_sended_study'], count_error)
