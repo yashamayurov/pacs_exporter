@@ -14,9 +14,11 @@ class DicomCollector(object):
     config = object()
     studyDate = ''
     local_AET = ''
-    def __init__(self, config):
+    
+    def __init__(self, config, studyDate=datetime.now()):
         self.config = config    
         self.local_AET = config['local_AET'] 
+        self.studyDate = studyDate.date().strftime("%Y%m%d")
         pass
 
     def collect(self):
@@ -27,7 +29,7 @@ class DicomCollector(object):
         target_status = self.Check_echo(AET=target_pacs['AET'],IP=target_pacs['IP'],port=target_pacs['port'])
 
         if (sender_status + target_status == 2):
-            self.studyDate = datetime.now().date().strftime("%Y%m%d")
+#            self.studyDate = datetime.now().date().strftime("%Y%m%d")
             study_list = self.GetStudyList(StudyDate=self.studyDate,AET=sender_pacs['AET'],IP=sender_pacs['IP'],port=sender_pacs['port'])
             print(self.studyDate)
             print(sender_pacs)
@@ -36,7 +38,11 @@ class DicomCollector(object):
             for study in study_list:
                 ds = Dataset
                 ds = study[1]
-                is_error = self.CheckErrorSend(StudyDate=self.studyDate,AET=target_pacs['AET'],IP=target_pacs['IP'],port=target_pacs['port'],StudyID=ds.StudyID,patientName=ds.PatientName)
+                
+                patientName = str(ds.PatientName).replace(' ','*') # Замена пробела на символ * в имени пациента
+                
+                #is_error = self.CheckErrorSend(StudyDate=self.studyDate,AET=target_pacs['AET'],IP=target_pacs['IP'],port=target_pacs['port'],StudyID=ds.StudyID,patientName=ds.PatientName)
+                is_error = self.CheckErrorSend(StudyDate=self.studyDate,AET=target_pacs['AET'],IP=target_pacs['IP'],port=target_pacs['port'],StudyID=ds.StudyID,patientName=patientName)
                 count_error += is_error
             
                 if is_error != 0:
@@ -67,6 +73,7 @@ class DicomCollector(object):
         # Create our Identifier (query) dataset
         ds = Dataset()
         #ds.PatientName = '*'
+
         if StudyID == '0':
             ds.PatientName = patientName
         else:
@@ -91,6 +98,7 @@ class DicomCollector(object):
         return count_study
     
     def CheckErrorSend(self,StudyDate, AET, IP, port, InstitutionName='',patientName='*',StudyID=''):
+
         study_list = self.GetStudyList( StudyDate=StudyDate, AET=AET, IP=IP, port=port, patientName=patientName,StudyID=StudyID)
         r = len(study_list)==0
         return int(r)
@@ -115,7 +123,11 @@ class DicomCollector(object):
 
 ############
 if __name__ == "__main__":
+    # str = 'ASADOVA^ETAR^NARCHAKYIZYI'
     
+    # str = str.split(' ')[0]
+    # print(str)
+
     parser = argparse.ArgumentParser()
     parser.add_argument('--config', default='config.yml')
 
@@ -141,4 +153,4 @@ if __name__ == "__main__":
     while True: 
         # period between collection
         time.sleep(3)
-
+    
