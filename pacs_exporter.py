@@ -10,15 +10,17 @@ from prometheus_client.core import GaugeMetricFamily, REGISTRY, CounterMetricFam
 from prometheus_client import start_http_server
 import prometheus_client
 
+from datetime import date, timedelta
+
 class DicomCollector(object):
     config = object()
     studyDate = ''
     local_AET = ''
     
-    def __init__(self, config, studyDate=datetime.now()):
+    def __init__(self, config):
         self.config = config    
         self.local_AET = config['local_AET'] 
-        self.studyDate = studyDate.date().strftime("%Y%m%d")
+      #  self.studyDate = studyDate.date().strftime("%Y%m%d")
         pass
 
     def collect(self):
@@ -29,7 +31,8 @@ class DicomCollector(object):
         target_status = self.Check_echo(AET=target_pacs['AET'],IP=target_pacs['IP'],port=target_pacs['port'])
 
         if (sender_status + target_status == 2):
-#            self.studyDate = datetime.now().date().strftime("%Y%m%d")
+            self.studyDate = datetime.now().date().strftime("%Y%m%d")
+            print(self.studyDate)
             study_list = self.GetStudyList(StudyDate=self.studyDate,AET=sender_pacs['AET'],IP=sender_pacs['IP'],port=sender_pacs['port'])
             print(self.studyDate)
             print(sender_pacs)
@@ -65,6 +68,10 @@ class DicomCollector(object):
             gauge_server_status.add_metric([server[1]['IP'], server[1]['AET'], str(server[1]['port'])],r)
             yield gauge_server_status
 
+        gauge_check_date = GaugeMetricFamily("check_date", "date of check send study",labels=['check_date'])
+        gauge_check_date.add_metric([self.studyDate], 1)
+        yield gauge_check_date
+        
 
     def GetStudyList(self, StudyDate, AET, IP, port, InstitutionName='',patientName='*',StudyID=''):
         ae = AE(self.local_AET)
