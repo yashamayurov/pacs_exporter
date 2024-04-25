@@ -1,0 +1,981 @@
+$$$$$$$$$$$
+(0008, 0000) Group Length                        UL: 702
+(0008, 0005) Specific Character Set              CS: 'ISO_IR 100'
+(0008, 0008) Image Type                          CS: ['ORIGINAL', 'PRIMARY']
+(0008, 0012) Instance Creation Date              DA: '20240410'
+(0008, 0013) Instance Creation Time              TM: '103729.000000'
+(0008, 0016) SOP Class UID                       UI: Digital Mammography X-Ray Image Storage - For Presentation
+(0008, 0018) SOP Instance UID                    UI: 2.16.840.1.113669.632.10.99.5.20240410.103208247.44081502.20
+(0008, 0020) Study Date                          DA: '20240410'
+(0008, 0021) Series Date                         DA: '20240410'
+(0008, 0022) Acquisition Date                    DA: '20240410'
+(0008, 0023) Content Date                        DA: '20240410'
+(0008, 0030) Study Time                          TM: '103046.000000'
+(0008, 0031) Series Time                         TM: '103208.000000'
+(0008, 0032) Acquisition Time                    TM: '103206.000000'
+(0008, 0033) Content Time                        TM: '103206.000000'
+(0008, 0050) Accession Number                    SH: '1866.4'
+(0008, 0060) Modality                            CS: 'MG'
+(0008, 0068) Presentation Intent Type            CS: 'FOR PRESENTATION'
+(0008, 0070) Manufacturer                        LO: 'Planmed'
+(0008, 0080) Institution Name                    LO: 'MOOD'
+(0008, 0081) Institution Address                 ST: 'Murmansk\nPavlova 6 k2'
+(0008, 0090) Referring Physician's Name          PN: ''
+(0008, 103e) Series Description                  LO: 'MG FOR PRESENTATION'
+(0008, 1070) Operators' Name                     PN: 'Doctor'
+(0008, 1090) Manufacturer's Model Name           LO: 'Planmed Clarity'
+(0008, 2112)  Source Image Sequence  1 item(s) ---- 
+   (0008, 1150) Referenced SOP Class UID            UI: Digital Mammography X-Ray Image Storage - For Processing
+   (0008, 1155) Referenced SOP Instance UID         UI: 2.16.840.1.113669.632.10.99.5.20240410.103206365.1.19
+   (0028, 135a) Spatial Locations Preserved         CS: 'YES'
+   ---------
+(0008, 2218)  Anatomic Region Sequence  1 item(s) ---- 
+   (0008, 0100) Code Value                          SH: 'T-04000'
+   (0008, 0102) Coding Scheme Designator            SH: 'SNM3'
+   (0008, 0104) Code Meaning                        LO: 'Breast'
+   ---------
+(0010, 0000) Group Length                        UL: 90
+(0010, 0010) Patient's Name                      PN: 'Bukhteeva^Ekaterina^Sergeevna^^'
+(0010, 0020) Patient ID                          LO: '1866'
+(0010, 0030) Patient's Birth Date                DA: '19741202'
+(0010, 0040) Patient's Sex                       CS: 'F'
+(0010, 1010) Patient's Age                       AS: '049Y'
+(0018, 0000) Group Length                        UL: 458
+(0018, 0015) Body Part Examined                  CS: 'BREAST'
+(0018, 0060) KVP                                 DS: '31.0'
+(0018, 1000) Device Serial Number                LO: 'CTY288778'
+(0018, 1020) Software Versions                   LO: 'ESW:2.5.6.418  CM: 2.6.4.1168'
+(0018, 1114) Estimated Radiographic Magnificatio DS: '1.034'
+(0018, 1150) Exposure Time                       IS: '957'
+(0018, 1151) X-Ray Tube Current                  IS: '103'
+(0018, 1152) Exposure                            IS: '71'
+(0018, 1153) Exposure in uAs                     IS: '71341'
+(0018, 1156) Rectification Type                  CS: 'CONST POTENTIAL'
+(0018, 1160) Filter Type                         SH: 'STRIP'
+(0018, 1164) Imager Pixel Spacing                DS: [0.083, 0.083]
+(0018, 1166) Grid                                CS: 'RECIPROCATING'
+(0018, 1190) Focal Spot(s)                       DS: '0.3'
+(0018, 1191) Anode Target Material               CS: 'TUNGSTEN'
+(0018, 11a0) Body Part Thickness                 DS: '65.0'
+(0018, 11a2) Compression Force                   DS: '80.0'
+(0018, 1405) Relative X-Ray Exposure             IS: '295'
+(0018, 1508) Positioner Type                     CS: 'MAMMOGRAPHIC'
+(0018, 1510) Positioner Primary Angle            DS: '0.0'
+(0018, 1511) Positioner Secondary Angle          DS: '0.0'
+(0018, 5101) View Position                       CS: 'CC'
+(0018, 7001) Detector Temperature                DS: '35.0'
+(0018, 7004) Detector Type                       CS: 'DIRECT'
+(0018, 700a) Detector ID                         SH: 'A44S08-1502'
+(0018, 700c) Date of Last Detector Calibration   DA: '20230731'
+(0018, 700e) Time of Last Detector Calibration   TM: '162300.000000'
+(0018, 7050) Filter Material                     CS: 'SILVER'
+(0018, 7060) Exposure Control Mode               CS: 'AUTOMATIC'
+(0018, 7062) Exposure Control Mode Description   LT: 'AEC'
+(0020, 0000) Group Length                        UL: 178
+(0020, 000d) Study Instance UID                  UI: 1.2.826.0.1.3680043.8.2198.224.918.72.1866.4
+(0020, 000e) Series Instance UID                 UI: 2.16.840.1.113669.632.10.99.5.20240410.103208363.11336.23
+(0020, 0010) Study ID                            SH: '103046'
+(0020, 0011) Series Number                       IS: '11'
+(0020, 0013) Instance Number                     IS: '230796'
+(0020, 0020) Patient Orientation                 CS: ['A', 'R']
+(0020, 0062) Image Laterality                    CS: 'L'
+(0028, 0000) Group Length                        UL: 294
+(0028, 0002) Samples per Pixel                   US: 1
+(0028, 0004) Photometric Interpretation          CS: 'MONOCHROME1'
+(0028, 0010) Rows                                US: 3584
+(0028, 0011) Columns                             US: 2796
+(0028, 0030) Pixel Spacing                       DS: [0.083, 0.083]
+(0028, 0100) Bits Allocated                      US: 16
+(0028, 0101) Bits Stored                         US: 16
+(0028, 0102) High Bit                            US: 15
+(0028, 0103) Pixel Representation                US: 0
+(0028, 0106) Smallest Image Pixel Value          US: 0
+(0028, 0107) Largest Image Pixel Value           US: 49442
+(0028, 0120) Pixel Padding Value                 US: 65535
+(0028, 0301) Burned In Annotation                CS: 'NO'
+(0028, 1040) Pixel Intensity Relationship        CS: 'LIN'
+(0028, 1041) Pixel Intensity Relationship Sign   SS: 21761
+(0028, 1050) Window Center                       DS: '32768.0'
+(0028, 1051) Window Width                        DS: '32768.0'
+(0028, 1052) Rescale Intercept                   DS: '0.0'
+(0028, 1053) Rescale Slope                       DS: '1.0'
+(0028, 1054) Rescale Type                        LO: 'US'
+(0028, 1055) Window Center & Width Explanation   LO: 'Default W/L'
+(0028, 1056) VOI LUT Function                    CS: 'LINEAR'
+(0028, 1300) Breast Implant Present              CS: 'NO'
+(0028, 1350) Partial View                        CS: 'NO'
+(0028, 2110) Lossy Image Compression             CS: '00'
+(0040, 0000) Group Length                        UL: 56
+(0040, 0316) Organ Dose                          DS: '0.0106'
+(0040, 0318) Organ Exposed                       CS: 'BREAST'
+(0040, 0555)  Acquisition Context Sequence  1 item(s) ---- 
+
+   ---------
+(0040, 8302) Entrance Dose in mGy                DS: '2.95'
+(0054, 0000) Group Length                        UL: 82
+(0054, 0220)  View Code Sequence  1 item(s) ---- 
+   (0008, 0100) Code Value                          SH: 'R-10242'
+   (0008, 0102) Coding Scheme Designator            SH: 'SNM3'
+   (0008, 0104) Code Meaning                        LO: 'cranio-caudal'
+   (0054, 0222)  View Modifier Code Sequence  1 item(s) ---- 
+
+      ---------
+   ---------
+(0101, 0000) Private Creator                     UN: b'P\x00\x00\x00'
+(0101, 0010) Private tag data                    LO: 'PM'
+(0101, 0020) Private tag data                    LO: 'PM'
+(0101, 2007) Private tag data                    UN: b'3 '
+(0101, 2008) Private tag data                    UN: b'-1'
+(0101, 2009) Private tag data                    UN: b'1 '
+(0101, 200a) Private tag data                    UN: b'0 '
+(0101, 200b) Private tag data                    UN: b'0 '
+(0101, 200c) Private tag data                    UN: b'0 '
+(2050, 0000) Group Length                        UL: 16
+(2050, 0020) Presentation LUT Shape              CS: 'INVERSE'
+(7fe0, 0000) Group Length                        UL: 20041736
+(7fe0, 0010) Pixel Data                          OW: Array of 20041728 elements
+{"Value": ["1866.4"], "vr": "SH"}
+{"Value": ["1866.4"], "vr": "SH"}
+{"Value": [0.0106], "vr": "DS"}
+{"Value": [2.95], "vr": "DS"}
+$$$$$$$$$$$
+(0008, 0000) Group Length                        UL: 702
+(0008, 0005) Specific Character Set              CS: 'ISO_IR 100'
+(0008, 0008) Image Type                          CS: ['ORIGINAL', 'PRIMARY']
+(0008, 0012) Instance Creation Date              DA: '20240410'
+(0008, 0013) Instance Creation Time              TM: '103730.000000'
+(0008, 0016) SOP Class UID                       UI: Digital Mammography X-Ray Image Storage - For Presentation
+(0008, 0018) SOP Instance UID                    UI: 2.16.840.1.113669.632.10.99.5.20240410.103246230.44081502.27
+(0008, 0020) Study Date                          DA: '20240410'
+(0008, 0021) Series Date                         DA: '20240410'
+(0008, 0022) Acquisition Date                    DA: '20240410'
+(0008, 0023) Content Date                        DA: '20240410'
+(0008, 0030) Study Time                          TM: '103046.000000'
+(0008, 0031) Series Time                         TM: '103208.000000'
+(0008, 0032) Acquisition Time                    TM: '103244.000000'
+(0008, 0033) Content Time                        TM: '103244.000000'
+(0008, 0050) Accession Number                    SH: '1866.4'
+(0008, 0060) Modality                            CS: 'MG'
+(0008, 0068) Presentation Intent Type            CS: 'FOR PRESENTATION'
+(0008, 0070) Manufacturer                        LO: 'Planmed'
+(0008, 0080) Institution Name                    LO: 'MOOD'
+(0008, 0081) Institution Address                 ST: 'Murmansk\nPavlova 6 k2'
+(0008, 0090) Referring Physician's Name          PN: ''
+(0008, 103e) Series Description                  LO: 'MG FOR PRESENTATION'
+(0008, 1070) Operators' Name                     PN: 'Doctor'
+(0008, 1090) Manufacturer's Model Name           LO: 'Planmed Clarity'
+(0008, 2112)  Source Image Sequence  1 item(s) ---- 
+   (0008, 1150) Referenced SOP Class UID            UI: Digital Mammography X-Ray Image Storage - For Processing
+   (0008, 1155) Referenced SOP Instance UID         UI: 2.16.840.1.113669.632.10.99.5.20240410.103244330.1.26
+   (0028, 135a) Spatial Locations Preserved         CS: 'YES'
+   ---------
+(0008, 2218)  Anatomic Region Sequence  1 item(s) ---- 
+   (0008, 0100) Code Value                          SH: 'T-04000'
+   (0008, 0102) Coding Scheme Designator            SH: 'SNM3'
+   (0008, 0104) Code Meaning                        LO: 'Breast'
+   ---------
+(0010, 0000) Group Length                        UL: 90
+(0010, 0010) Patient's Name                      PN: 'Bukhteeva^Ekaterina^Sergeevna^^'
+(0010, 0020) Patient ID                          LO: '1866'
+(0010, 0030) Patient's Birth Date                DA: '19741202'
+(0010, 0040) Patient's Sex                       CS: 'F'
+(0010, 1010) Patient's Age                       AS: '049Y'
+(0018, 0000) Group Length                        UL: 458
+(0018, 0015) Body Part Examined                  CS: 'BREAST'
+(0018, 0060) KVP                                 DS: '31.0'
+(0018, 1000) Device Serial Number                LO: 'CTY288778'
+(0018, 1020) Software Versions                   LO: 'ESW:2.5.6.418  CM: 2.6.4.1168'
+(0018, 1114) Estimated Radiographic Magnificatio DS: '1.034'
+(0018, 1150) Exposure Time                       IS: '942'
+(0018, 1151) X-Ray Tube Current                  IS: '103'
+(0018, 1152) Exposure                            IS: '70'
+(0018, 1153) Exposure in uAs                     IS: '69852'
+(0018, 1156) Rectification Type                  CS: 'CONST POTENTIAL'
+(0018, 1160) Filter Type                         SH: 'STRIP'
+(0018, 1164) Imager Pixel Spacing                DS: [0.083, 0.083]
+(0018, 1166) Grid                                CS: 'RECIPROCATING'
+(0018, 1190) Focal Spot(s)                       DS: '0.3'
+(0018, 1191) Anode Target Material               CS: 'TUNGSTEN'
+(0018, 11a0) Body Part Thickness                 DS: '70.0'
+(0018, 11a2) Compression Force                   DS: '70.0'
+(0018, 1405) Relative X-Ray Exposure             IS: '294'
+(0018, 1508) Positioner Type                     CS: 'MAMMOGRAPHIC'
+(0018, 1510) Positioner Primary Angle            DS: '0.0'
+(0018, 1511) Positioner Secondary Angle          DS: '0.0'
+(0018, 5101) View Position                       CS: 'CC'
+(0018, 7001) Detector Temperature                DS: '35.0'
+(0018, 7004) Detector Type                       CS: 'DIRECT'
+(0018, 700a) Detector ID                         SH: 'A44S08-1502'
+(0018, 700c) Date of Last Detector Calibration   DA: '20230731'
+(0018, 700e) Time of Last Detector Calibration   TM: '162300.000000'
+(0018, 7050) Filter Material                     CS: 'SILVER'
+(0018, 7060) Exposure Control Mode               CS: 'AUTOMATIC'
+(0018, 7062) Exposure Control Mode Description   LT: 'AEC'
+(0020, 0000) Group Length                        UL: 178
+(0020, 000d) Study Instance UID                  UI: 1.2.826.0.1.3680043.8.2198.224.918.72.1866.4
+(0020, 000e) Series Instance UID                 UI: 2.16.840.1.113669.632.10.99.5.20240410.103208363.11336.23
+(0020, 0010) Study ID                            SH: '103046'
+(0020, 0011) Series Number                       IS: '11'
+(0020, 0013) Instance Number                     IS: '230798'
+(0020, 0020) Patient Orientation                 CS: ['P', 'L']
+(0020, 0062) Image Laterality                    CS: 'R'
+(0028, 0000) Group Length                        UL: 294
+(0028, 0002) Samples per Pixel                   US: 1
+(0028, 0004) Photometric Interpretation          CS: 'MONOCHROME1'
+(0028, 0010) Rows                                US: 3584
+(0028, 0011) Columns                             US: 2796
+(0028, 0030) Pixel Spacing                       DS: [0.083, 0.083]
+(0028, 0100) Bits Allocated                      US: 16
+(0028, 0101) Bits Stored                         US: 16
+(0028, 0102) High Bit                            US: 15
+(0028, 0103) Pixel Representation                US: 0
+(0028, 0106) Smallest Image Pixel Value          US: 0
+(0028, 0107) Largest Image Pixel Value           US: 49446
+(0028, 0120) Pixel Padding Value                 US: 65535
+(0028, 0301) Burned In Annotation                CS: 'NO'
+(0028, 1040) Pixel Intensity Relationship        CS: 'LIN'
+(0028, 1041) Pixel Intensity Relationship Sign   SS: 769
+(0028, 1050) Window Center                       DS: '32768.0'
+(0028, 1051) Window Width                        DS: '32768.0'
+(0028, 1052) Rescale Intercept                   DS: '0.0'
+(0028, 1053) Rescale Slope                       DS: '1.0'
+(0028, 1054) Rescale Type                        LO: 'US'
+(0028, 1055) Window Center & Width Explanation   LO: 'Default W/L'
+(0028, 1056) VOI LUT Function                    CS: 'LINEAR'
+(0028, 1300) Breast Implant Present              CS: 'NO'
+(0028, 1350) Partial View                        CS: 'NO'
+(0028, 2110) Lossy Image Compression             CS: '00'
+(0040, 0000) Group Length                        UL: 56
+(0040, 0316) Organ Dose                          DS: '0.0101'
+(0040, 0318) Organ Exposed                       CS: 'BREAST'
+(0040, 0555)  Acquisition Context Sequence  1 item(s) ---- 
+
+   ---------
+(0040, 8302) Entrance Dose in mGy                DS: '2.94'
+(0054, 0000) Group Length                        UL: 82
+(0054, 0220)  View Code Sequence  1 item(s) ---- 
+   (0008, 0100) Code Value                          SH: 'R-10242'
+   (0008, 0102) Coding Scheme Designator            SH: 'SNM3'
+   (0008, 0104) Code Meaning                        LO: 'cranio-caudal'
+   (0054, 0222)  View Modifier Code Sequence  1 item(s) ---- 
+
+      ---------
+   ---------
+(0101, 0000) Private Creator                     UN: b'P\x00\x00\x00'
+(0101, 0010) Private tag data                    LO: 'PM'
+(0101, 0020) Private tag data                    LO: 'PM'
+(0101, 2007) Private tag data                    UN: b'3 '
+(0101, 2008) Private tag data                    UN: b'-1'
+(0101, 2009) Private tag data                    UN: b'1 '
+(0101, 200a) Private tag data                    UN: b'0 '
+(0101, 200b) Private tag data                    UN: b'0 '
+(0101, 200c) Private tag data                    UN: b'0 '
+(2050, 0000) Group Length                        UL: 16
+(2050, 0020) Presentation LUT Shape              CS: 'INVERSE'
+(7fe0, 0000) Group Length                        UL: 20041736
+(7fe0, 0010) Pixel Data                          OW: Array of 20041728 elements
+{"Value": ["1866.4"], "vr": "SH"}
+{"Value": ["1866.4"], "vr": "SH"}
+{"Value": [0.0101], "vr": "DS"}
+{"Value": [2.94], "vr": "DS"}
+$$$$$$$$$$$
+(0008, 0000) Group Length                        UL: 702
+(0008, 0005) Specific Character Set              CS: 'ISO_IR 100'
+(0008, 0008) Image Type                          CS: ['ORIGINAL', 'PRIMARY']
+(0008, 0012) Instance Creation Date              DA: '20240410'
+(0008, 0013) Instance Creation Time              TM: '103732.000000'
+(0008, 0016) SOP Class UID                       UI: Digital Mammography X-Ray Image Storage - For Presentation
+(0008, 0018) SOP Instance UID                    UI: 2.16.840.1.113669.632.10.99.5.20240410.103337459.44081502.32
+(0008, 0020) Study Date                          DA: '20240410'
+(0008, 0021) Series Date                         DA: '20240410'
+(0008, 0022) Acquisition Date                    DA: '20240410'
+(0008, 0023) Content Date                        DA: '20240410'
+(0008, 0030) Study Time                          TM: '103046.000000'
+(0008, 0031) Series Time                         TM: '103208.000000'
+(0008, 0032) Acquisition Time                    TM: '103335.000000'
+(0008, 0033) Content Time                        TM: '103335.000000'
+(0008, 0050) Accession Number                    SH: '1866.4'
+(0008, 0060) Modality                            CS: 'MG'
+(0008, 0068) Presentation Intent Type            CS: 'FOR PRESENTATION'
+(0008, 0070) Manufacturer                        LO: 'Planmed'
+(0008, 0080) Institution Name                    LO: 'MOOD'
+(0008, 0081) Institution Address                 ST: 'Murmansk\nPavlova 6 k2'
+(0008, 0090) Referring Physician's Name          PN: ''
+(0008, 103e) Series Description                  LO: 'MG FOR PRESENTATION'
+(0008, 1070) Operators' Name                     PN: 'Doctor'
+(0008, 1090) Manufacturer's Model Name           LO: 'Planmed Clarity'
+(0008, 2112)  Source Image Sequence  1 item(s) ---- 
+   (0008, 1150) Referenced SOP Class UID            UI: Digital Mammography X-Ray Image Storage - For Processing
+   (0008, 1155) Referenced SOP Instance UID         UI: 2.16.840.1.113669.632.10.99.5.20240410.103335484.1.31
+   (0028, 135a) Spatial Locations Preserved         CS: 'YES'
+   ---------
+(0008, 2218)  Anatomic Region Sequence  1 item(s) ---- 
+   (0008, 0100) Code Value                          SH: 'T-04000'
+   (0008, 0102) Coding Scheme Designator            SH: 'SNM3'
+   (0008, 0104) Code Meaning                        LO: 'Breast'
+   ---------
+(0010, 0000) Group Length                        UL: 90
+(0010, 0010) Patient's Name                      PN: 'Bukhteeva^Ekaterina^Sergeevna^^'
+(0010, 0020) Patient ID                          LO: '1866'
+(0010, 0030) Patient's Birth Date                DA: '19741202'
+(0010, 0040) Patient's Sex                       CS: 'F'
+(0010, 1010) Patient's Age                       AS: '049Y'
+(0018, 0000) Group Length                        UL: 464
+(0018, 0015) Body Part Examined                  CS: 'BREAST'
+(0018, 0060) KVP                                 DS: '32.0'
+(0018, 1000) Device Serial Number                LO: 'CTY288778'
+(0018, 1020) Software Versions                   LO: 'ESW:2.5.6.418  CM: 2.6.4.1168'
+(0018, 1114) Estimated Radiographic Magnificatio DS: '1.034'
+(0018, 1150) Exposure Time                       IS: '1396'
+(0018, 1151) X-Ray Tube Current                  IS: '100'
+(0018, 1152) Exposure                            IS: '113'
+(0018, 1153) Exposure in uAs                     IS: '113254'
+(0018, 1156) Rectification Type                  CS: 'CONST POTENTIAL'
+(0018, 1160) Filter Type                         SH: 'STRIP'
+(0018, 1164) Imager Pixel Spacing                DS: [0.083, 0.083]
+(0018, 1166) Grid                                CS: 'RECIPROCATING'
+(0018, 1190) Focal Spot(s)                       DS: '0.3'
+(0018, 1191) Anode Target Material               CS: 'TUNGSTEN'
+(0018, 11a0) Body Part Thickness                 DS: '79.0'
+(0018, 11a2) Compression Force                   DS: '70.0'
+(0018, 1405) Relative X-Ray Exposure             IS: '538'
+(0018, 1508) Positioner Type                     CS: 'MAMMOGRAPHIC'
+(0018, 1510) Positioner Primary Angle            DS: '-45.0'
+(0018, 1511) Positioner Secondary Angle          DS: '0.0'
+(0018, 5101) View Position                       CS: 'MLO'
+(0018, 7001) Detector Temperature                DS: '35.0'
+(0018, 7004) Detector Type                       CS: 'DIRECT'
+(0018, 700a) Detector ID                         SH: 'A44S08-1502'
+(0018, 700c) Date of Last Detector Calibration   DA: '20230731'
+(0018, 700e) Time of Last Detector Calibration   TM: '162300.000000'
+(0018, 7050) Filter Material                     CS: 'SILVER'
+(0018, 7060) Exposure Control Mode               CS: 'AUTOMATIC'
+(0018, 7062) Exposure Control Mode Description   LT: 'AEC'
+(0020, 0000) Group Length                        UL: 178
+(0020, 000d) Study Instance UID                  UI: 1.2.826.0.1.3680043.8.2198.224.918.72.1866.4
+(0020, 000e) Series Instance UID                 UI: 2.16.840.1.113669.632.10.99.5.20240410.103208363.11336.23
+(0020, 0010) Study ID                            SH: '103046'
+(0020, 0011) Series Number                       IS: '11'
+(0020, 0013) Instance Number                     IS: '230800'
+(0020, 0020) Patient Orientation                 CS: ['A', 'FR']
+(0020, 0062) Image Laterality                    CS: 'L'
+(0028, 0000) Group Length                        UL: 294
+(0028, 0002) Samples per Pixel                   US: 1
+(0028, 0004) Photometric Interpretation          CS: 'MONOCHROME1'
+(0028, 0010) Rows                                US: 3584
+(0028, 0011) Columns                             US: 2796
+(0028, 0030) Pixel Spacing                       DS: [0.083, 0.083]
+(0028, 0100) Bits Allocated                      US: 16
+(0028, 0101) Bits Stored                         US: 16
+(0028, 0102) High Bit                            US: 15
+(0028, 0103) Pixel Representation                US: 0
+(0028, 0106) Smallest Image Pixel Value          US: 0
+(0028, 0107) Largest Image Pixel Value           US: 49517
+(0028, 0120) Pixel Padding Value                 US: 65535
+(0028, 0301) Burned In Annotation                CS: 'NO'
+(0028, 1040) Pixel Intensity Relationship        CS: 'LIN'
+(0028, 1041) Pixel Intensity Relationship Sign   SS: 769
+(0028, 1050) Window Center                       DS: '32768.0'
+(0028, 1051) Window Width                        DS: '32768.0'
+(0028, 1052) Rescale Intercept                   DS: '0.0'
+(0028, 1053) Rescale Slope                       DS: '1.0'
+(0028, 1054) Rescale Type                        LO: 'US'
+(0028, 1055) Window Center & Width Explanation   LO: 'Default W/L'
+(0028, 1056) VOI LUT Function                    CS: 'LINEAR'
+(0028, 1300) Breast Implant Present              CS: 'NO'
+(0028, 1350) Partial View                        CS: 'NO'
+(0028, 2110) Lossy Image Compression             CS: '00'
+(0040, 0000) Group Length                        UL: 56
+(0040, 0316) Organ Dose                          DS: '0.0176'
+(0040, 0318) Organ Exposed                       CS: 'BREAST'
+(0040, 0555)  Acquisition Context Sequence  1 item(s) ---- 
+
+   ---------
+(0040, 8302) Entrance Dose in mGy                DS: '5.38'
+(0054, 0000) Group Length                        UL: 90
+(0054, 0220)  View Code Sequence  1 item(s) ---- 
+   (0008, 0100) Code Value                          SH: 'R-10226'
+   (0008, 0102) Coding Scheme Designator            SH: 'SNM3'
+   (0008, 0104) Code Meaning                        LO: 'medio-lateral oblique'
+   (0054, 0222)  View Modifier Code Sequence  1 item(s) ---- 
+
+      ---------
+   ---------
+(0101, 0000) Private Creator                     UN: b'P\x00\x00\x00'
+(0101, 0010) Private tag data                    LO: 'PM'
+(0101, 0020) Private tag data                    LO: 'PM'
+(0101, 2007) Private tag data                    UN: b'3 '
+(0101, 2008) Private tag data                    UN: b'-1'
+(0101, 2009) Private tag data                    UN: b'1 '
+(0101, 200a) Private tag data                    UN: b'0 '
+(0101, 200b) Private tag data                    UN: b'0 '
+(0101, 200c) Private tag data                    UN: b'0 '
+(2050, 0000) Group Length                        UL: 16
+(2050, 0020) Presentation LUT Shape              CS: 'INVERSE'
+(7fe0, 0000) Group Length                        UL: 20041736
+(7fe0, 0010) Pixel Data                          OW: Array of 20041728 elements
+{"Value": ["1866.4"], "vr": "SH"}
+{"Value": ["1866.4"], "vr": "SH"}
+{"Value": [0.0176], "vr": "DS"}
+{"Value": [5.38], "vr": "DS"}
+$$$$$$$$$$$
+(0008, 0000) Group Length                        UL: 702
+(0008, 0005) Specific Character Set              CS: 'ISO_IR 100'
+(0008, 0008) Image Type                          CS: ['ORIGINAL', 'PRIMARY']
+(0008, 0012) Instance Creation Date              DA: '20240410'
+(0008, 0013) Instance Creation Time              TM: '103735.000000'
+(0008, 0016) SOP Class UID                       UI: Digital Mammography X-Ray Image Storage - For Presentation
+(0008, 0018) SOP Instance UID                    UI: 2.16.840.1.113669.632.10.99.5.20240410.103430285.44081502.37
+(0008, 0020) Study Date                          DA: '20240410'
+(0008, 0021) Series Date                         DA: '20240410'
+(0008, 0022) Acquisition Date                    DA: '20240410'
+(0008, 0023) Content Date                        DA: '20240410'
+(0008, 0030) Study Time                          TM: '103046.000000'
+(0008, 0031) Series Time                         TM: '103208.000000'
+(0008, 0032) Acquisition Time                    TM: '103428.000000'
+(0008, 0033) Content Time                        TM: '103428.000000'
+(0008, 0050) Accession Number                    SH: '1866.4'
+(0008, 0060) Modality                            CS: 'MG'
+(0008, 0068) Presentation Intent Type            CS: 'FOR PRESENTATION'
+(0008, 0070) Manufacturer                        LO: 'Planmed'
+(0008, 0080) Institution Name                    LO: 'MOOD'
+(0008, 0081) Institution Address                 ST: 'Murmansk\nPavlova 6 k2'
+(0008, 0090) Referring Physician's Name          PN: ''
+(0008, 103e) Series Description                  LO: 'MG FOR PRESENTATION'
+(0008, 1070) Operators' Name                     PN: 'Doctor'
+(0008, 1090) Manufacturer's Model Name           LO: 'Planmed Clarity'
+(0008, 2112)  Source Image Sequence  1 item(s) ---- 
+   (0008, 1150) Referenced SOP Class UID            UI: Digital Mammography X-Ray Image Storage - For Processing
+   (0008, 1155) Referenced SOP Instance UID         UI: 2.16.840.1.113669.632.10.99.5.20240410.103428388.1.36
+   (0028, 135a) Spatial Locations Preserved         CS: 'YES'
+   ---------
+(0008, 2218)  Anatomic Region Sequence  1 item(s) ---- 
+   (0008, 0100) Code Value                          SH: 'T-04000'
+   (0008, 0102) Coding Scheme Designator            SH: 'SNM3'
+   (0008, 0104) Code Meaning                        LO: 'Breast'
+   ---------
+(0010, 0000) Group Length                        UL: 90
+(0010, 0010) Patient's Name                      PN: 'Bukhteeva^Ekaterina^Sergeevna^^'
+(0010, 0020) Patient ID                          LO: '1866'
+(0010, 0030) Patient's Birth Date                DA: '19741202'
+(0010, 0040) Patient's Sex                       CS: 'F'
+(0010, 1010) Patient's Age                       AS: '049Y'
+(0018, 0000) Group Length                        UL: 460
+(0018, 0015) Body Part Examined                  CS: 'BREAST'
+(0018, 0060) KVP                                 DS: '31.0'
+(0018, 1000) Device Serial Number                LO: 'CTY288778'
+(0018, 1020) Software Versions                   LO: 'ESW:2.5.6.418  CM: 2.6.4.1168'
+(0018, 1114) Estimated Radiographic Magnificatio DS: '1.034'
+(0018, 1150) Exposure Time                       IS: '997'
+(0018, 1151) X-Ray Tube Current                  IS: '103'
+(0018, 1152) Exposure                            IS: '75'
+(0018, 1153) Exposure in uAs                     IS: '75408'
+(0018, 1156) Rectification Type                  CS: 'CONST POTENTIAL'
+(0018, 1160) Filter Type                         SH: 'STRIP'
+(0018, 1164) Imager Pixel Spacing                DS: [0.083, 0.083]
+(0018, 1166) Grid                                CS: 'RECIPROCATING'
+(0018, 1190) Focal Spot(s)                       DS: '0.3'
+(0018, 1191) Anode Target Material               CS: 'TUNGSTEN'
+(0018, 11a0) Body Part Thickness                 DS: '67.0'
+(0018, 11a2) Compression Force                   DS: '80.0'
+(0018, 1405) Relative X-Ray Exposure             IS: '314'
+(0018, 1508) Positioner Type                     CS: 'MAMMOGRAPHIC'
+(0018, 1510) Positioner Primary Angle            DS: '-90.0'
+(0018, 1511) Positioner Secondary Angle          DS: '0.0'
+(0018, 5101) View Position                       CS: 'LM'
+(0018, 7001) Detector Temperature                DS: '35.0'
+(0018, 7004) Detector Type                       CS: 'DIRECT'
+(0018, 700a) Detector ID                         SH: 'A44S08-1502'
+(0018, 700c) Date of Last Detector Calibration   DA: '20230731'
+(0018, 700e) Time of Last Detector Calibration   TM: '162300.000000'
+(0018, 7050) Filter Material                     CS: 'SILVER'
+(0018, 7060) Exposure Control Mode               CS: 'AUTOMATIC'
+(0018, 7062) Exposure Control Mode Description   LT: 'AEC'
+(0020, 0000) Group Length                        UL: 178
+(0020, 000d) Study Instance UID                  UI: 1.2.826.0.1.3680043.8.2198.224.918.72.1866.4
+(0020, 000e) Series Instance UID                 UI: 2.16.840.1.113669.632.10.99.5.20240410.103208363.11336.23
+(0020, 0010) Study ID                            SH: '103046'
+(0020, 0011) Series Number                       IS: '11'
+(0020, 0013) Instance Number                     IS: '230802'
+(0020, 0020) Patient Orientation                 CS: ['P', 'F']
+(0020, 0062) Image Laterality                    CS: 'R'
+(0028, 0000) Group Length                        UL: 294
+(0028, 0002) Samples per Pixel                   US: 1
+(0028, 0004) Photometric Interpretation          CS: 'MONOCHROME1'
+(0028, 0010) Rows                                US: 3584
+(0028, 0011) Columns                             US: 2796
+(0028, 0030) Pixel Spacing                       DS: [0.083, 0.083]
+(0028, 0100) Bits Allocated                      US: 16
+(0028, 0101) Bits Stored                         US: 16
+(0028, 0102) High Bit                            US: 15
+(0028, 0103) Pixel Representation                US: 0
+(0028, 0106) Smallest Image Pixel Value          US: 0
+(0028, 0107) Largest Image Pixel Value           US: 49458
+(0028, 0120) Pixel Padding Value                 US: 65535
+(0028, 0301) Burned In Annotation                CS: 'NO'
+(0028, 1040) Pixel Intensity Relationship        CS: 'LIN'
+(0028, 1041) Pixel Intensity Relationship Sign   SS: 1281
+(0028, 1050) Window Center                       DS: '32768.0'
+(0028, 1051) Window Width                        DS: '32768.0'
+(0028, 1052) Rescale Intercept                   DS: '0.0'
+(0028, 1053) Rescale Slope                       DS: '1.0'
+(0028, 1054) Rescale Type                        LO: 'US'
+(0028, 1055) Window Center & Width Explanation   LO: 'Default W/L'
+(0028, 1056) VOI LUT Function                    CS: 'LINEAR'
+(0028, 1300) Breast Implant Present              CS: 'NO'
+(0028, 1350) Partial View                        CS: 'NO'
+(0028, 2110) Lossy Image Compression             CS: '00'
+(0040, 0000) Group Length                        UL: 56
+(0040, 0316) Organ Dose                          DS: '0.0111'
+(0040, 0318) Organ Exposed                       CS: 'BREAST'
+(0040, 0555)  Acquisition Context Sequence  1 item(s) ---- 
+
+   ---------
+(0040, 8302) Entrance Dose in mGy                DS: '3.14'
+(0054, 0000) Group Length                        UL: 82
+(0054, 0220)  View Code Sequence  1 item(s) ---- 
+   (0008, 0100) Code Value                          SH: 'R-10228'
+   (0008, 0102) Coding Scheme Designator            SH: 'SNM3'
+   (0008, 0104) Code Meaning                        LO: 'latero-medial'
+   (0054, 0222)  View Modifier Code Sequence  1 item(s) ---- 
+
+      ---------
+   ---------
+(0101, 0000) Private Creator                     UN: b'P\x00\x00\x00'
+(0101, 0010) Private tag data                    LO: 'PM'
+(0101, 0020) Private tag data                    LO: 'PM'
+(0101, 2007) Private tag data                    UN: b'3 '
+(0101, 2008) Private tag data                    UN: b'-1'
+(0101, 2009) Private tag data                    UN: b'1 '
+(0101, 200a) Private tag data                    UN: b'0 '
+(0101, 200b) Private tag data                    UN: b'0 '
+(0101, 200c) Private tag data                    UN: b'0 '
+(2050, 0000) Group Length                        UL: 16
+(2050, 0020) Presentation LUT Shape              CS: 'INVERSE'
+(7fe0, 0000) Group Length                        UL: 20041736
+(7fe0, 0010) Pixel Data                          OW: Array of 20041728 elements
+{"Value": ["1866.4"], "vr": "SH"}
+{"Value": ["1866.4"], "vr": "SH"}
+{"Value": [0.0111], "vr": "DS"}
+{"Value": [3.14], "vr": "DS"}
+$$$$$$$$$$$
+(0008, 0000) Group Length                        UL: 702
+(0008, 0005) Specific Character Set              CS: 'ISO_IR 100'
+(0008, 0008) Image Type                          CS: ['ORIGINAL', 'PRIMARY']
+(0008, 0012) Instance Creation Date              DA: '20240410'
+(0008, 0013) Instance Creation Time              TM: '103737.000000'
+(0008, 0016) SOP Class UID                       UI: Digital Mammography X-Ray Image Storage - For Presentation
+(0008, 0018) SOP Instance UID                    UI: 2.16.840.1.113669.632.10.99.5.20240410.103526194.44081502.42
+(0008, 0020) Study Date                          DA: '20240410'
+(0008, 0021) Series Date                         DA: '20240410'
+(0008, 0022) Acquisition Date                    DA: '20240410'
+(0008, 0023) Content Date                        DA: '20240410'
+(0008, 0030) Study Time                          TM: '103046.000000'
+(0008, 0031) Series Time                         TM: '103208.000000'
+(0008, 0032) Acquisition Time                    TM: '103524.000000'
+(0008, 0033) Content Time                        TM: '103524.000000'
+(0008, 0050) Accession Number                    SH: '1866.4'
+(0008, 0060) Modality                            CS: 'MG'
+(0008, 0068) Presentation Intent Type            CS: 'FOR PRESENTATION'
+(0008, 0070) Manufacturer                        LO: 'Planmed'
+(0008, 0080) Institution Name                    LO: 'MOOD'
+(0008, 0081) Institution Address                 ST: 'Murmansk\nPavlova 6 k2'
+(0008, 0090) Referring Physician's Name          PN: ''
+(0008, 103e) Series Description                  LO: 'MG FOR PRESENTATION'
+(0008, 1070) Operators' Name                     PN: 'Doctor'
+(0008, 1090) Manufacturer's Model Name           LO: 'Planmed Clarity'
+(0008, 2112)  Source Image Sequence  1 item(s) ---- 
+   (0008, 1150) Referenced SOP Class UID            UI: Digital Mammography X-Ray Image Storage - For Processing
+   (0008, 1155) Referenced SOP Instance UID         UI: 2.16.840.1.113669.632.10.99.5.20240410.103524303.1.41
+   (0028, 135a) Spatial Locations Preserved         CS: 'YES'
+   ---------
+(0008, 2218)  Anatomic Region Sequence  1 item(s) ---- 
+   (0008, 0100) Code Value                          SH: 'T-04000'
+   (0008, 0102) Coding Scheme Designator            SH: 'SNM3'
+   (0008, 0104) Code Meaning                        LO: 'Breast'
+   ---------
+(0010, 0000) Group Length                        UL: 90
+(0010, 0010) Patient's Name                      PN: 'Bukhteeva^Ekaterina^Sergeevna^^'
+(0010, 0020) Patient ID                          LO: '1866'
+(0010, 0030) Patient's Birth Date                DA: '19741202'
+(0010, 0040) Patient's Sex                       CS: 'F'
+(0010, 1010) Patient's Age                       AS: '049Y'
+(0018, 0000) Group Length                        UL: 462
+(0018, 0015) Body Part Examined                  CS: 'BREAST'
+(0018, 0060) KVP                                 DS: '31.0'
+(0018, 1000) Device Serial Number                LO: 'CTY288778'
+(0018, 1020) Software Versions                   LO: 'ESW:2.5.6.418  CM: 2.6.4.1168'
+(0018, 1114) Estimated Radiographic Magnificatio DS: '1.034'
+(0018, 1150) Exposure Time                       IS: '1318'
+(0018, 1151) X-Ray Tube Current                  IS: '103'
+(0018, 1152) Exposure                            IS: '108'
+(0018, 1153) Exposure in uAs                     IS: '108418'
+(0018, 1156) Rectification Type                  CS: 'CONST POTENTIAL'
+(0018, 1160) Filter Type                         SH: 'STRIP'
+(0018, 1164) Imager Pixel Spacing                DS: [0.083, 0.083]
+(0018, 1166) Grid                                CS: 'RECIPROCATING'
+(0018, 1190) Focal Spot(s)                       DS: '0.3'
+(0018, 1191) Anode Target Material               CS: 'TUNGSTEN'
+(0018, 11a0) Body Part Thickness                 DS: '71.0'
+(0018, 11a2) Compression Force                   DS: '80.0'
+(0018, 1405) Relative X-Ray Exposure             IS: '459'
+(0018, 1508) Positioner Type                     CS: 'MAMMOGRAPHIC'
+(0018, 1510) Positioner Primary Angle            DS: '45.0'
+(0018, 1511) Positioner Secondary Angle          DS: '0.0'
+(0018, 5101) View Position                       CS: 'MLO'
+(0018, 7001) Detector Temperature                DS: '35.0'
+(0018, 7004) Detector Type                       CS: 'DIRECT'
+(0018, 700a) Detector ID                         SH: 'A44S08-1502'
+(0018, 700c) Date of Last Detector Calibration   DA: '20230731'
+(0018, 700e) Time of Last Detector Calibration   TM: '162300.000000'
+(0018, 7050) Filter Material                     CS: 'SILVER'
+(0018, 7060) Exposure Control Mode               CS: 'AUTOMATIC'
+(0018, 7062) Exposure Control Mode Description   LT: 'AEC'
+(0020, 0000) Group Length                        UL: 178
+(0020, 000d) Study Instance UID                  UI: 1.2.826.0.1.3680043.8.2198.224.918.72.1866.4
+(0020, 000e) Series Instance UID                 UI: 2.16.840.1.113669.632.10.99.5.20240410.103208363.11336.23
+(0020, 0010) Study ID                            SH: '103046'
+(0020, 0011) Series Number                       IS: '11'
+(0020, 0013) Instance Number                     IS: '230804'
+(0020, 0020) Patient Orientation                 CS: ['P', 'FL']
+(0020, 0062) Image Laterality                    CS: 'R'
+(0028, 0000) Group Length                        UL: 294
+(0028, 0002) Samples per Pixel                   US: 1
+(0028, 0004) Photometric Interpretation          CS: 'MONOCHROME1'
+(0028, 0010) Rows                                US: 3584
+(0028, 0011) Columns                             US: 2796
+(0028, 0030) Pixel Spacing                       DS: [0.083, 0.083]
+(0028, 0100) Bits Allocated                      US: 16
+(0028, 0101) Bits Stored                         US: 16
+(0028, 0102) High Bit                            US: 15
+(0028, 0103) Pixel Representation                US: 0
+(0028, 0106) Smallest Image Pixel Value          US: 0
+(0028, 0107) Largest Image Pixel Value           US: 49515
+(0028, 0120) Pixel Padding Value                 US: 65535
+(0028, 0301) Burned In Annotation                CS: 'NO'
+(0028, 1040) Pixel Intensity Relationship        CS: 'LIN'
+(0028, 1041) Pixel Intensity Relationship Sign   SS: 769
+(0028, 1050) Window Center                       DS: '32768.0'
+(0028, 1051) Window Width                        DS: '32768.0'
+(0028, 1052) Rescale Intercept                   DS: '0.0'
+(0028, 1053) Rescale Slope                       DS: '1.0'
+(0028, 1054) Rescale Type                        LO: 'US'
+(0028, 1055) Window Center & Width Explanation   LO: 'Default W/L'
+(0028, 1056) VOI LUT Function                    CS: 'LINEAR'
+(0028, 1300) Breast Implant Present              CS: 'NO'
+(0028, 1350) Partial View                        CS: 'NO'
+(0028, 2110) Lossy Image Compression             CS: '00'
+(0040, 0000) Group Length                        UL: 56
+(0040, 0316) Organ Dose                          DS: '0.0157'
+(0040, 0318) Organ Exposed                       CS: 'BREAST'
+(0040, 0555)  Acquisition Context Sequence  1 item(s) ---- 
+
+   ---------
+(0040, 8302) Entrance Dose in mGy                DS: '4.59'
+(0054, 0000) Group Length                        UL: 90
+(0054, 0220)  View Code Sequence  1 item(s) ---- 
+   (0008, 0100) Code Value                          SH: 'R-10226'
+   (0008, 0102) Coding Scheme Designator            SH: 'SNM3'
+   (0008, 0104) Code Meaning                        LO: 'medio-lateral oblique'
+   (0054, 0222)  View Modifier Code Sequence  1 item(s) ---- 
+
+      ---------
+   ---------
+(0101, 0000) Private Creator                     UN: b'P\x00\x00\x00'
+(0101, 0010) Private tag data                    LO: 'PM'
+(0101, 0020) Private tag data                    LO: 'PM'
+(0101, 2007) Private tag data                    UN: b'3 '
+(0101, 2008) Private tag data                    UN: b'-1'
+(0101, 2009) Private tag data                    UN: b'1 '
+(0101, 200a) Private tag data                    UN: b'0 '
+(0101, 200b) Private tag data                    UN: b'0 '
+(0101, 200c) Private tag data                    UN: b'0 '
+(2050, 0000) Group Length                        UL: 16
+(2050, 0020) Presentation LUT Shape              CS: 'INVERSE'
+(7fe0, 0000) Group Length                        UL: 20041736
+(7fe0, 0010) Pixel Data                          OW: Array of 20041728 elements
+{"Value": ["1866.4"], "vr": "SH"}
+{"Value": ["1866.4"], "vr": "SH"}
+{"Value": [0.0157], "vr": "DS"}
+{"Value": [4.59], "vr": "DS"}
+$$$$$$$$$$$
+(0008, 0000) Group Length                        UL: 702
+(0008, 0005) Specific Character Set              CS: 'ISO_IR 100'
+(0008, 0008) Image Type                          CS: ['ORIGINAL', 'PRIMARY']
+(0008, 0012) Instance Creation Date              DA: '20240410'
+(0008, 0013) Instance Creation Time              TM: '103740.000000'
+(0008, 0016) SOP Class UID                       UI: Digital Mammography X-Ray Image Storage - For Presentation
+(0008, 0018) SOP Instance UID                    UI: 2.16.840.1.113669.632.10.99.5.20240410.103613334.44081502.47
+(0008, 0020) Study Date                          DA: '20240410'
+(0008, 0021) Series Date                         DA: '20240410'
+(0008, 0022) Acquisition Date                    DA: '20240410'
+(0008, 0023) Content Date                        DA: '20240410'
+(0008, 0030) Study Time                          TM: '103046.000000'
+(0008, 0031) Series Time                         TM: '103208.000000'
+(0008, 0032) Acquisition Time                    TM: '103611.000000'
+(0008, 0033) Content Time                        TM: '103611.000000'
+(0008, 0050) Accession Number                    SH: '1866.4'
+(0008, 0060) Modality                            CS: 'MG'
+(0008, 0068) Presentation Intent Type            CS: 'FOR PRESENTATION'
+(0008, 0070) Manufacturer                        LO: 'Planmed'
+(0008, 0080) Institution Name                    LO: 'MOOD'
+(0008, 0081) Institution Address                 ST: 'Murmansk\nPavlova 6 k2'
+(0008, 0090) Referring Physician's Name          PN: ''
+(0008, 103e) Series Description                  LO: 'MG FOR PRESENTATION'
+(0008, 1070) Operators' Name                     PN: 'Doctor'
+(0008, 1090) Manufacturer's Model Name           LO: 'Planmed Clarity'
+(0008, 2112)  Source Image Sequence  1 item(s) ---- 
+   (0008, 1150) Referenced SOP Class UID            UI: Digital Mammography X-Ray Image Storage - For Processing
+   (0008, 1155) Referenced SOP Instance UID         UI: 2.16.840.1.113669.632.10.99.5.20240410.103611437.1.46
+   (0028, 135a) Spatial Locations Preserved         CS: 'YES'
+   ---------
+(0008, 2218)  Anatomic Region Sequence  1 item(s) ---- 
+   (0008, 0100) Code Value                          SH: 'T-04000'
+   (0008, 0102) Coding Scheme Designator            SH: 'SNM3'
+   (0008, 0104) Code Meaning                        LO: 'Breast'
+   ---------
+(0010, 0000) Group Length                        UL: 90
+(0010, 0010) Patient's Name                      PN: 'Bukhteeva^Ekaterina^Sergeevna^^'
+(0010, 0020) Patient ID                          LO: '1866'
+(0010, 0030) Patient's Birth Date                DA: '19741202'
+(0010, 0040) Patient's Sex                       CS: 'F'
+(0010, 1010) Patient's Age                       AS: '049Y'
+(0018, 0000) Group Length                        UL: 458
+(0018, 0015) Body Part Examined                  CS: 'BREAST'
+(0018, 0060) KVP                                 DS: '31.0'
+(0018, 1000) Device Serial Number                LO: 'CTY288778'
+(0018, 1020) Software Versions                   LO: 'ESW:2.5.6.418  CM: 2.6.4.1168'
+(0018, 1114) Estimated Radiographic Magnificatio DS: '1.034'
+(0018, 1150) Exposure Time                       IS: '1105'
+(0018, 1151) X-Ray Tube Current                  IS: '103'
+(0018, 1152) Exposure                            IS: '86'
+(0018, 1153) Exposure in uAs                     IS: '86398'
+(0018, 1156) Rectification Type                  CS: 'CONST POTENTIAL'
+(0018, 1160) Filter Type                         SH: 'STRIP'
+(0018, 1164) Imager Pixel Spacing                DS: [0.083, 0.083]
+(0018, 1166) Grid                                CS: 'RECIPROCATING'
+(0018, 1190) Focal Spot(s)                       DS: '0.3'
+(0018, 1191) Anode Target Material               CS: 'TUNGSTEN'
+(0018, 11a0) Body Part Thickness                 DS: '67.0'
+(0018, 11a2) Compression Force                   DS: '80.0'
+(0018, 1405) Relative X-Ray Exposure             IS: '360'
+(0018, 1508) Positioner Type                     CS: 'MAMMOGRAPHIC'
+(0018, 1510) Positioner Primary Angle            DS: '90.0'
+(0018, 1511) Positioner Secondary Angle          DS: '0.0'
+(0018, 5101) View Position                       CS: 'LM'
+(0018, 7001) Detector Temperature                DS: '35.0'
+(0018, 7004) Detector Type                       CS: 'DIRECT'
+(0018, 700a) Detector ID                         SH: 'A44S08-1502'
+(0018, 700c) Date of Last Detector Calibration   DA: '20230731'
+(0018, 700e) Time of Last Detector Calibration   TM: '162300.000000'
+(0018, 7050) Filter Material                     CS: 'SILVER'
+(0018, 7060) Exposure Control Mode               CS: 'AUTOMATIC'
+(0018, 7062) Exposure Control Mode Description   LT: 'AEC'
+(0020, 0000) Group Length                        UL: 178
+(0020, 000d) Study Instance UID                  UI: 1.2.826.0.1.3680043.8.2198.224.918.72.1866.4
+(0020, 000e) Series Instance UID                 UI: 2.16.840.1.113669.632.10.99.5.20240410.103208363.11336.23
+(0020, 0010) Study ID                            SH: '103046'
+(0020, 0011) Series Number                       IS: '11'
+(0020, 0013) Instance Number                     IS: '230806'
+(0020, 0020) Patient Orientation                 CS: ['A', 'F']
+(0020, 0062) Image Laterality                    CS: 'L'
+(0028, 0000) Group Length                        UL: 294
+(0028, 0002) Samples per Pixel                   US: 1
+(0028, 0004) Photometric Interpretation          CS: 'MONOCHROME1'
+(0028, 0010) Rows                                US: 3584
+(0028, 0011) Columns                             US: 2796
+(0028, 0030) Pixel Spacing                       DS: [0.083, 0.083]
+(0028, 0100) Bits Allocated                      US: 16
+(0028, 0101) Bits Stored                         US: 16
+(0028, 0102) High Bit                            US: 15
+(0028, 0103) Pixel Representation                US: 0
+(0028, 0106) Smallest Image Pixel Value          US: 0
+(0028, 0107) Largest Image Pixel Value           US: 49457
+(0028, 0120) Pixel Padding Value                 US: 65535
+(0028, 0301) Burned In Annotation                CS: 'NO'
+(0028, 1040) Pixel Intensity Relationship        CS: 'LIN'
+(0028, 1041) Pixel Intensity Relationship Sign   SS: 1281
+(0028, 1050) Window Center                       DS: '32768.0'
+(0028, 1051) Window Width                        DS: '32768.0'
+(0028, 1052) Rescale Intercept                   DS: '0.0'
+(0028, 1053) Rescale Slope                       DS: '1.0'
+(0028, 1054) Rescale Type                        LO: 'US'
+(0028, 1055) Window Center & Width Explanation   LO: 'Default W/L'
+(0028, 1056) VOI LUT Function                    CS: 'LINEAR'
+(0028, 1300) Breast Implant Present              CS: 'NO'
+(0028, 1350) Partial View                        CS: 'NO'
+(0028, 2110) Lossy Image Compression             CS: '00'
+(0040, 0000) Group Length                        UL: 56
+(0040, 0316) Organ Dose                          DS: '0.0127'
+(0040, 0318) Organ Exposed                       CS: 'BREAST'
+(0040, 0555)  Acquisition Context Sequence  1 item(s) ---- 
+
+   ---------
+(0040, 8302) Entrance Dose in mGy                DS: '3.6'
+(0054, 0000) Group Length                        UL: 82
+(0054, 0220)  View Code Sequence  1 item(s) ---- 
+   (0008, 0100) Code Value                          SH: 'R-10228'
+   (0008, 0102) Coding Scheme Designator            SH: 'SNM3'
+   (0008, 0104) Code Meaning                        LO: 'latero-medial'
+   (0054, 0222)  View Modifier Code Sequence  1 item(s) ---- 
+
+      ---------
+   ---------
+(0101, 0000) Private Creator                     UN: b'P\x00\x00\x00'
+(0101, 0010) Private tag data                    LO: 'PM'
+(0101, 0020) Private tag data                    LO: 'PM'
+(0101, 2007) Private tag data                    UN: b'3 '
+(0101, 2008) Private tag data                    UN: b'-1'
+(0101, 2009) Private tag data                    UN: b'1 '
+(0101, 200a) Private tag data                    UN: b'0 '
+(0101, 200b) Private tag data                    UN: b'0 '
+(0101, 200c) Private tag data                    UN: b'0 '
+(2050, 0000) Group Length                        UL: 16
+(2050, 0020) Presentation LUT Shape              CS: 'INVERSE'
+(7fe0, 0000) Group Length                        UL: 20041736
+(7fe0, 0010) Pixel Data                          OW: Array of 20041728 elements
+{"Value": ["1866.4"], "vr": "SH"}
+{"Value": ["1866.4"], "vr": "SH"}
+{"Value": [0.0127], "vr": "DS"}
+{"Value": [3.6], "vr": "DS"}
+$$$$$$$$$$$
+(0008, 0000) Group Length                        UL: 702
+(0008, 0005) Specific Character Set              CS: 'ISO_IR 100'
+(0008, 0008) Image Type                          CS: ['ORIGINAL', 'PRIMARY']
+(0008, 0012) Instance Creation Date              DA: '20240410'
+(0008, 0013) Instance Creation Time              TM: '103742.000000'
+(0008, 0016) SOP Class UID                       UI: Digital Mammography X-Ray Image Storage - For Presentation
+(0008, 0018) SOP Instance UID                    UI: 2.16.840.1.113669.632.10.99.5.20240410.103718838.44081502.52
+(0008, 0020) Study Date                          DA: '20240410'
+(0008, 0021) Series Date                         DA: '20240410'
+(0008, 0022) Acquisition Date                    DA: '20240410'
+(0008, 0023) Content Date                        DA: '20240410'
+(0008, 0030) Study Time                          TM: '103046.000000'
+(0008, 0031) Series Time                         TM: '103208.000000'
+(0008, 0032) Acquisition Time                    TM: '103716.000000'
+(0008, 0033) Content Time                        TM: '103716.000000'
+(0008, 0050) Accession Number                    SH: '1866.4'
+(0008, 0060) Modality                            CS: 'MG'
+(0008, 0068) Presentation Intent Type            CS: 'FOR PRESENTATION'
+(0008, 0070) Manufacturer                        LO: 'Planmed'
+(0008, 0080) Institution Name                    LO: 'MOOD'
+(0008, 0081) Institution Address                 ST: 'Murmansk\nPavlova 6 k2'
+(0008, 0090) Referring Physician's Name          PN: ''
+(0008, 103e) Series Description                  LO: 'MG FOR PRESENTATION'
+(0008, 1070) Operators' Name                     PN: 'Doctor'
+(0008, 1090) Manufacturer's Model Name           LO: 'Planmed Clarity'
+(0008, 2112)  Source Image Sequence  1 item(s) ---- 
+   (0008, 1150) Referenced SOP Class UID            UI: Digital Mammography X-Ray Image Storage - For Processing
+   (0008, 1155) Referenced SOP Instance UID         UI: 2.16.840.1.113669.632.10.99.5.20240410.103716934.1.51
+   (0028, 135a) Spatial Locations Preserved         CS: 'YES'
+   ---------
+(0008, 2218)  Anatomic Region Sequence  1 item(s) ---- 
+   (0008, 0100) Code Value                          SH: 'T-04000'
+   (0008, 0102) Coding Scheme Designator            SH: 'SNM3'
+   (0008, 0104) Code Meaning                        LO: 'Breast'
+   ---------
+(0010, 0000) Group Length                        UL: 90
+(0010, 0010) Patient's Name                      PN: 'Bukhteeva^Ekaterina^Sergeevna^^'
+(0010, 0020) Patient ID                          LO: '1866'
+(0010, 0030) Patient's Birth Date                DA: '19741202'
+(0010, 0040) Patient's Sex                       CS: 'F'
+(0010, 1010) Patient's Age                       AS: '049Y'
+(0018, 0000) Group Length                        UL: 466
+(0018, 0015) Body Part Examined                  CS: 'BREAST'
+(0018, 0060) KVP                                 DS: '33.0'
+(0018, 1000) Device Serial Number                LO: 'CTY288778'
+(0018, 1020) Software Versions                   LO: 'ESW:2.5.6.418  CM: 2.6.4.1168'
+(0018, 1114) Estimated Radiographic Magnificatio DS: '1.034'
+(0018, 1150) Exposure Time                       IS: '1705'
+(0018, 1151) X-Ray Tube Current                  IS: '97'
+(0018, 1152) Exposure                            IS: '140'
+(0018, 1153) Exposure in uAs                     IS: '139633'
+(0018, 1156) Rectification Type                  CS: 'CONST POTENTIAL'
+(0018, 1160) Filter Type                         SH: 'STRIP'
+(0018, 1164) Imager Pixel Spacing                DS: [0.083, 0.083]
+(0018, 1166) Grid                                CS: 'RECIPROCATING'
+(0018, 1190) Focal Spot(s)                       DS: '0.3'
+(0018, 1191) Anode Target Material               CS: 'TUNGSTEN'
+(0018, 11a0) Body Part Thickness                 DS: '91.0'
+(0018, 11a2) Compression Force                   DS: '80.0'
+(0018, 1405) Relative X-Ray Exposure             IS: '752'
+(0018, 1508) Positioner Type                     CS: 'MAMMOGRAPHIC'
+(0018, 1510) Positioner Primary Angle            DS: '-29.0'
+(0018, 1511) Positioner Secondary Angle          DS: '0.0'
+(0018, 5101) View Position                       CS: 'MLO'
+(0018, 7001) Detector Temperature                DS: '35.125'
+(0018, 7004) Detector Type                       CS: 'DIRECT'
+(0018, 700a) Detector ID                         SH: 'A44S08-1502'
+(0018, 700c) Date of Last Detector Calibration   DA: '20230731'
+(0018, 700e) Time of Last Detector Calibration   TM: '162300.000000'
+(0018, 7050) Filter Material                     CS: 'SILVER'
+(0018, 7060) Exposure Control Mode               CS: 'AUTOMATIC'
+(0018, 7062) Exposure Control Mode Description   LT: 'AEC'
+(0020, 0000) Group Length                        UL: 178
+(0020, 000d) Study Instance UID                  UI: 1.2.826.0.1.3680043.8.2198.224.918.72.1866.4
+(0020, 000e) Series Instance UID                 UI: 2.16.840.1.113669.632.10.99.5.20240410.103208363.11336.23
+(0020, 0010) Study ID                            SH: '103046'
+(0020, 0011) Series Number                       IS: '11'
+(0020, 0013) Instance Number                     IS: '230808'
+(0020, 0020) Patient Orientation                 CS: ['A', 'FR']
+(0020, 0062) Image Laterality                    CS: 'L'
+(0028, 0000) Group Length                        UL: 294
+(0028, 0002) Samples per Pixel                   US: 1
+(0028, 0004) Photometric Interpretation          CS: 'MONOCHROME1'
+(0028, 0010) Rows                                US: 3584
+(0028, 0011) Columns                             US: 2796
+(0028, 0030) Pixel Spacing                       DS: [0.083, 0.083]
+(0028, 0100) Bits Allocated                      US: 16
+(0028, 0101) Bits Stored                         US: 16
+(0028, 0102) High Bit                            US: 15
+(0028, 0103) Pixel Representation                US: 0
+(0028, 0106) Smallest Image Pixel Value          US: 0
+(0028, 0107) Largest Image Pixel Value           US: 49746
+(0028, 0120) Pixel Padding Value                 US: 65535
+(0028, 0301) Burned In Annotation                CS: 'NO'
+(0028, 1040) Pixel Intensity Relationship        CS: 'LIN'
+(0028, 1041) Pixel Intensity Relationship Sign   SS: 1025
+(0028, 1050) Window Center                       DS: '32768.0'
+(0028, 1051) Window Width                        DS: '32768.0'
+(0028, 1052) Rescale Intercept                   DS: '0.0'
+(0028, 1053) Rescale Slope                       DS: '1.0'
+(0028, 1054) Rescale Type                        LO: 'US'
+(0028, 1055) Window Center & Width Explanation   LO: 'Default W/L'
+(0028, 1056) VOI LUT Function                    CS: 'LINEAR'
+(0028, 1300) Breast Implant Present              CS: 'NO'
+(0028, 1350) Partial View                        CS: 'NO'
+(0028, 2110) Lossy Image Compression             CS: '00'
+(0040, 0000) Group Length                        UL: 56
+(0040, 0316) Organ Dose                          DS: '0.0223'
+(0040, 0318) Organ Exposed                       CS: 'BREAST'
+(0040, 0555)  Acquisition Context Sequence  1 item(s) ---- 
+
+   ---------
+(0040, 8302) Entrance Dose in mGy                DS: '7.52'
+(0054, 0000) Group Length                        UL: 90
+(0054, 0220)  View Code Sequence  1 item(s) ---- 
+   (0008, 0100) Code Value                          SH: 'R-10226'
+   (0008, 0102) Coding Scheme Designator            SH: 'SNM3'
+   (0008, 0104) Code Meaning                        LO: 'medio-lateral oblique'
+   (0054, 0222)  View Modifier Code Sequence  1 item(s) ---- 
+
+      ---------
+   ---------
+(0101, 0000) Private Creator                     UN: b'P\x00\x00\x00'
+(0101, 0010) Private tag data                    LO: 'PM'
+(0101, 0020) Private tag data                    LO: 'PM'
+(0101, 2007) Private tag data                    UN: b'3 '
+(0101, 2008) Private tag data                    UN: b'-1'
+(0101, 2009) Private tag data                    UN: b'1 '
+(0101, 200a) Private tag data                    UN: b'0 '
+(0101, 200b) Private tag data                    UN: b'0 '
+(0101, 200c) Private tag data                    UN: b'0 '
+(2050, 0000) Group Length                        UL: 16
+(2050, 0020) Presentation LUT Shape              CS: 'INVERSE'
+(7fe0, 0000) Group Length                        UL: 20041736
+(7fe0, 0010) Pixel Data                          OW: Array of 20041728 elements
+{"Value": ["1866.4"], "vr": "SH"}
+{"Value": ["1866.4"], "vr": "SH"}
+{"Value": [0.0223], "vr": "DS"}
+{"Value": [7.52], "vr": "DS"}
+C-MOVE query status: 0x0000
