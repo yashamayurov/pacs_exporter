@@ -1,0 +1,20 @@
+[((0000, 0900) Status                              US: 65280, (0008, 0000) Group Length                        UL: 138
+(0008, 0005) Specific Character Set              CS: 'ISO_IR 192'
+(0008, 0020) Study Date                          DA: '20240410'
+(0008, 0030) Study Time                          TM: '103046.000000'
+(0008, 0050) Accession Number                    SH: '1866.4'
+(0008, 0052) Query/Retrieve Level                CS: 'STUDY'
+(0008, 0061) Modalities in Study                 CS: 'MG'
+(0008, 0062) SOP Classes in Study                UI: Digital Mammography X-Ray Image Storage - For Presentation
+(0008, 1030) Study Description                   LO: ''
+(0010, 0000) Group Length                        UL: 84
+(0010, 0010) Patient's Name                      PN: 'BUKHTEEVA^EKATERINA^SERGEEVNA'
+(0010, 0020) Patient ID                          LO: '1866'
+(0010, 0030) Patient's Birth Date                DA: '19741202'
+(0010, 0040) Patient's Sex                       CS: 'F'
+(0010, 4000) Patient Comments                    LT: ''
+(0020, 0000) Group Length                        UL: 86
+(0020, 000d) Study Instance UID                  UI: 1.2.826.0.1.3680043.8.2198.224.918.72.1866.4
+(0020, 0010) Study ID                            SH: '103046'
+(0020, 1206) Number of Study Related Series      IS: '1'
+(0020, 1208) Number of Study Related Instances   IS: '7')]
